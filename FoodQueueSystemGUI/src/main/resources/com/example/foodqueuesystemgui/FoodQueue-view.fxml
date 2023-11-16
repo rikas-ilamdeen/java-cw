@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="443.0" prefWidth="608.0" style="-fx-background-color: #C7DFFC;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foodqueuesystemgui.FoodQueueController">
+
+   <Text fx:id="heading" fill="#9c0505" layoutX="213.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foodies Fave Food center">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Text>
+   <TextField fx:id="searchTextField" layoutX="12.0" layoutY="72.0" prefHeight="18.0" prefWidth="183.0" promptText="Enter customer name" style="-fx-border-color: #2985EE; -fx-background-color: #FFFFFF;" />
+   <Button fx:id="searchButton" layoutX="238.0" layoutY="72.0" mnemonicParsing="false" onAction="#searchCustomer" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: #2985EE; -fx-background-radius: 25;" text="Search" />
+   <Text fx:id="customerDetailsText" fill="black" layoutX="26.0" layoutY="100.0">
+      <font>
+         <Font name="System" size="13.0" />
+      </font>
+   </Text>
+
+   <TableView fx:id="customerTableView" layoutX="12.0" layoutY="222.0" prefHeight="210.0" prefWidth="583.0" style="-fx-background-color: #E8F8F9; -fx-border-color: #2985EE;">
+      <columns>
+         <TableColumn fx:id="queues" prefWidth="91.19998550415039" text="Queues" />
+         <TableColumn fx:id="firstNameColumn" prefWidth="167.99998474121094" text="First Name" />
+         <TableColumn fx:id="secondNameColumn" prefWidth="156.79998779296875" text="Last Name" />
+         <TableColumn fx:id="burgersColumn" prefWidth="165.5999755859375" text="Burgers Required" />
+      </columns>
+   </TableView>
+
+</AnchorPane>

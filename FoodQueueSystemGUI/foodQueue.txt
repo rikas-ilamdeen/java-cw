@@ -1,0 +1,11 @@
+Queue 1:
+ss dd
+www ssd
+
+Queue 2 is empty.
+Queue 3:
+ee rr
+ 
+ 
+ 
+ 
